@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/MartinsitoBritoDiaz/MusicFestival/issues"
   },
-  "homepage": "https://github.com/MartinsitoBritoDiaz/MusicFestival#readme"
+  "homepage": "https://github.com/MartinsitoBritoDiaz/MusicFestival#readme",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  }
 }
