@@ -1,0 +1,23 @@
+{
+  "name": "musicfestival",
+  "version": "1.0.0",
+  "description": "Project with Gulp, Sass and HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinsitoBritoDiaz/MusicFestival.git"
+  },
+  "keywords": [
+    "SASS",
+    "GULP"
+  ],
+  "author": "Martinsito Brito Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinsitoBritoDiaz/MusicFestival/issues"
+  },
+  "homepage": "https://github.com/MartinsitoBritoDiaz/MusicFestival#readme"
+}
