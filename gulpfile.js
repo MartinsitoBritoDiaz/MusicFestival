@@ -1,3 +1,4 @@
+const sass = require('gulp-sass');
 
 function work( done ){
     console.log('Hello world from my first work with gulp');
@@ -5,4 +6,4 @@ function work( done ){
     done();
 };
 
-exports.newwork = work;
+exports.newwork = work; 
