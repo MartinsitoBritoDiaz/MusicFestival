@@ -1,0 +1,7 @@
+@use 'variables' as v;
+
+@mixin phone($valor) {
+    @media (min-width: $valor) {
+        @content;
+    }
+}
