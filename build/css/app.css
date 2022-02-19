@@ -392,17 +392,38 @@ h3 {
   text-align: center;
 }
 @media (min-width: 768px) {
+  .header h1 {
+    margin: 0rem;
+  }
+}
+.header .content-header {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
   .header .content-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
+@media (min-width: 768px) {
+  .nav-primary {
+    display: flex;
+  }
+}
 .nav-primary a {
   display: block;
   color: #FFF;
   font-size: 2.4rem;
   text-align: center;
   margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .nav-primary a {
+    margin-bottom: 0rem;
+    padding-right: 2rem;
+  }
 }
 .nav-primary a:hover {
   color: #FEF46D;
