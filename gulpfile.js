@@ -20,9 +20,9 @@ function convertWebp( done ){
         quality: 50
     };
 
-    src('src/img/**/*.{png,jpg}')
-        .pipe( webp(option) )
-        .pipe( dest('build/img'))
+    src('src/img/**/*.{png,jpg,jpeg}')
+        .pipe( webp(option) ) // Ajustar la Calidad
+        .pipe( dest('build/img')) //Nueva Ubicacion
 
     done();
 }
