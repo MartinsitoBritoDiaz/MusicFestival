@@ -389,11 +389,20 @@ h3 {
 }
 .header h1 {
   color: #FFF;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+  }
 }
 
 .nav-primary a {
+  display: block;
   color: #FFF;
   font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .nav-primary a:hover {
   color: #FEF46D;

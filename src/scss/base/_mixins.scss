@@ -1,7 +1,31 @@
 @use 'variables' as v;
 
-@mixin phone($valor) {
+@mixin mediaQuery($valor) {
     @media (min-width: $valor) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (min-width:480px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width:992px) {
+        @content;
+    }
+}
+
+@mixin desktopXL {
+    @media (min-width:  1200px) {
         @content;
     }
 }
