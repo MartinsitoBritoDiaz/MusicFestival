@@ -9,8 +9,10 @@
         text-align: center;
     }
 
-    @include m.tablet {
-        display: flex;
+    .content-header{
+        @include m.mediaQuery(v.$tablet) {
+            display: flex;
+        }
     }
 }
 
