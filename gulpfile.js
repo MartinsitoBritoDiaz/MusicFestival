@@ -8,6 +8,7 @@ const sass = require('gulp-sass')(require('sass'));
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
+const avif = require('gulp-avif');
 
 function css( done ){
     src('src/scss/**/*.scss') //Identificar el archivo css
@@ -40,6 +41,17 @@ function images(done){
     done();
 }
 
+function convertAvif( done ){
+    const option ={
+        quality: 50
+    }
+    src('src/img/**/*.{png,jpg,jpeg}')
+        .pipe( avif(option) ) // Ajustar la Calidad
+        .pipe( dest('build/img')) //Nueva Ubicacion
+
+    done();
+}
+
 
 function dev( done ){
     watch('src/scss/**/*.scss', css)
@@ -50,4 +62,5 @@ function dev( done ){
 exports.css = css; 
 exports.images = images; 
 exports.convertWebp = convertWebp;
-exports.dev = parallel(images, convertWebp, dev); 
+exports.convertAvif = convertAvif;
+exports.dev = parallel(images, convertWebp, convertAvif, dev); 
