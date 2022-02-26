@@ -8,6 +8,9 @@ const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 
+// JavaScript
+const terser = require('gulp-terser-js');
+
 //Images
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
@@ -61,6 +64,7 @@ function convertAvif( done ){
 
 function javascript( done ){
     src('src/js/**/*.js')
+        .pipe( terser() )
         .pipe( dest('build/js'));
 
     done();
