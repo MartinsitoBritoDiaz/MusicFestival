@@ -18,6 +18,9 @@ body{
     &.fixed-body{
         overflow: hidden;
     }
+    &.body-scroll{
+        scroll-padding-top: 8.6rem;
+    }
 }
 
 p{
