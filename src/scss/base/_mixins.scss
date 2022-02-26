@@ -11,3 +11,9 @@
     grid-template-columns: repeat($columns, 1fr);
     gap: $spacing;
 }
+
+@mixin resetList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

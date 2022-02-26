@@ -11,7 +11,7 @@
     }
     .day{
         text-transform: uppercase;
-        margin-bottom: 5rem;
+        margin: 5rem 0;
     }
 }
 
@@ -27,7 +27,7 @@
 
 .show{
     padding-top: 2rem;
-
+    border-radius: 2rem;
     p{
         &:after{
             content: '';
@@ -40,6 +40,7 @@
             margin: 2rem auto 0 auto;
         }
     }
+    margin-bottom: 2rem;
 }
 
 .edm .show-name:after{
@@ -51,13 +52,27 @@
 }
 
 .calendar{
-    
+    @include m.resetList;
+    li {
+        padding: 2.5rem;
+        font-weight: 700;
+        span{
+            font-weight: 400;
+        }
+    }
 }
 
 .bg-yellow{
     background-color: v.$yellow;
+    li:nth-child(odd){
+        background-color: darken($color: v.$yellow, $amount: 15%);    
+    }
 }
 
 .bg-green{
     background-color: v.$green;
+    
+    li:nth-child(odd){
+        background-color: darken($color: v.$green, $amount: 10%);    
+    }
 }
