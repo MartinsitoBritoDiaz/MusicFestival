@@ -507,3 +507,57 @@ img {
   color: #F53756;
   font-weight: 700;
 }
+
+.lineup {
+  padding: 5rem 0;
+  background-color: #F53756;
+}
+.lineup h3, .lineup p {
+  color: #FFF;
+  text-align: center;
+}
+.lineup .day {
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .show-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.show-container p {
+  color: #000;
+}
+
+.show {
+  padding-top: 2rem;
+}
+.show p:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.edm .show-name:after {
+  background-image: url(../img/icono_edm.png);
+}
+
+.rock .show-name:after {
+  background-image: url(../img/icono_rock.png);
+}
+
+.bg-yellow {
+  background-color: #FEF46D;
+}
+
+.bg-green {
+  background-color: #4cb8b3;
+}
