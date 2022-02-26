@@ -52,15 +52,23 @@ function convertAvif( done ){
     done();
 }
 
+function javascript( done ){
+    src('src/js/**/*.js')
+        .pipe( dest('build/js'));
+
+    done();
+}
 
 function dev( done ){
     watch('src/scss/**/*.scss', css)
+    watch('src/js/**/*.js', javascript)
 
     done();
 };
 
 exports.css = css; 
+exports.js = javascript; 
 exports.images = images; 
 exports.convertWebp = convertWebp;
 exports.convertAvif = convertAvif;
-exports.dev = parallel(images, convertWebp, convertAvif, dev); 
+exports.dev = parallel(images, convertWebp, convertAvif, javascript, dev); 
